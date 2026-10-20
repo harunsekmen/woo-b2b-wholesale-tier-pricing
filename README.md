@@ -1,10 +1,10 @@
 # 🚀 WooCommerce B2B Wholesale & Tiered Volume Pricing
 
-[![WooCommerce HPOS Ready](https://img.shields.io/badge/Compatibility-Production%20Ready-7f54b3.svg)](#)
+[![WooCommerce HPOS Ready](https://img.shields.io/badge/WooCommerce-HPOS%20Ready-7f54b3.svg)](https://github.com/harunsekmen/woo-b2b-wholesale-tier-pricing)
 [![License: GPL-3.0](https://img.shields.io/badge/License-GPL%203.0-blue.svg)](LICENSE)
-[![Open Source](https://img.shields.io/badge/Open%20Source-Community%20Project-brightgreen.svg)](#)
+[![Open Source](https://img.shields.io/badge/Open%20Source-Production%20Grade-brightgreen.svg)](#)
 
-> Role-based pricing engine supporting volume discount tables, tax-exempt rules, and wholesale minimum order thresholds.
+> Enterprise B2B wholesale pricing engine for WooCommerce. Enables role-based wholesale pricing, quantity volume discount tables, and tax-exempt rules on a single store without expensive monthly extensions.
 
 Developed and maintained by **[Harun Sekmen](https://github.com/harunsekmen)** — E-Commerce Systems Engineer & WooCommerce Specialist.
 
@@ -12,43 +12,37 @@ Developed and maintained by **[Harun Sekmen](https://github.com/harunsekmen)** �
 
 ---
 
-## ⚡ The Problem It Solves
+## 📸 Operational WordPress Admin Interface
 
-Commercial B2B plugins cost $200+/year, slow down database queries, and require separate storefronts.
+Wholesale pricing tier matrix and discount rules inside WordPress Admin (WooCommerce > B2B Pricing):
 
-Targeted specifically for **Brands selling to both retail consumers and wholesale B2B accounts**.
+![B2B Wholesale Tier Pricing Dashboard](docs/assets/admin-b2b-pricing-dashboard.png)
 
-Common search inquiries addressed by this repository: `woocommerce wholesale pricing plugin free`, `woocommerce b2b tiered pricing`, `role based pricing woocommerce without plugin`.
+---
+
+## ⚡ The Measurable Outcome
+
+- **Hybrid B2B & B2C on One Store:** Serve retail consumers at standard prices while automatically giving wholesale buyers discounted tiered rates upon login.
+- **Dynamic Volume Pricing Tiers:** Tier 1 (20% off for 1-19 units), Tier 2 (25% off for 20-49 units), Tier 3 (35% off for 50+ units).
+- **Retail Quantity Breaks:** Incentivize larger consumer orders with automated 10% discounts on 10+ unit purchases.
+- **Zero Database Bloat:** Hooks dynamically into `woocommerce_product_get_price` without creating duplicate products or slow database queries.
 
 ---
 
 ## 🛠️ Key Architectural Features
 
-- **Production-Ready Architecture:** Built with clean standards (PHP 8.1+, WooCommerce HPOS, Store API).
-- **Conversion-Optimized Experience:** Engineered to eliminate friction and elevate Average Order Value (AOV).
-- **Zero Heavy Page Builder Dependencies:** Direct native code without unnecessary plugin bloat.
-- **High-Performance Compatibility:** Tested for modern e-commerce standards and high-traffic reliability.
-
----
-
-## 💻 Tech Stack & Standards
-
-- **Platform:** WooCommerce
-- **Category:** B2B & Wholesale
-- **Technologies:** PHP 8.1+, WooCommerce HPOS, Store API
+- **Role-Gated Price Filter:** Wholesale prices and volume discount tables are visible only to approved `wholesale_customer` user roles.
+- **HPOS Compatible:** Built natively for WooCommerce High-Performance Order Storage with clean order line calculations.
+- **WP Admin Configuration Dashboard:** Manage tier thresholds, percentage discounts, and wholesale roles directly in WooCommerce.
 
 ---
 
 ## 💼 Work With Harun Sekmen
 
-Need this architecture customized for your brand, or looking for turnkey e-commerce engineering?
+- **B2B & Wholesale E-Commerce:** Custom B2B portals, role-based checkout, wholesale tax exemption, and invoice payment terms.
+- **Shopify to WooCommerce B2B Migration:** Migrate away from Shopify Plus's $2,000/mo fee while keeping wholesale pricing intact.
 
-- **Custom Store Development:** Bespoke storefronts, high-converting checkout funnels, and catalog architecture.
-- **Shopify to WooCommerce Migration:** Full catalog, customer data, and order history transfers with zero commission fees.
-- **Performance & Speed Audits:** Eliminating bottlenecks, reducing cart latency, and optimizing Core Web Vitals.
-- **Custom Integrations:** Connecting payment gateways (Stripe, PayPal, iyzico, PayTR), ERPs, and shipping APIs.
-
-📩 **Inquiries:** Send your project brief or store URL to **[sekmenwp@gmail.com](mailto:sekmenwp@gmail.com)** or connect on **[LinkedIn](https://www.linkedin.com/in/harunsekmen/)**.
+📩 **Inquiries:** Send your project brief to **[sekmenwp@gmail.com](mailto:sekmenwp@gmail.com)** or connect on **[LinkedIn](https://www.linkedin.com/in/harunsekmen/)**.
 
 ---
 

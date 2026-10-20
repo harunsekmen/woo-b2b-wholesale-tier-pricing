@@ -46,6 +46,22 @@ Wholesale pricing tier matrix and discount rules inside WordPress Admin (WooComm
 
 ---
 
+## 🧪 Automated Testing & Live Verification
+
+This repository includes a standalone test suite with zero external mock dependencies.
+
+### How to Run Tests
+```bash
+php tests/test-b2b.php
+```
+
+### Verification Scope
+- **Test Target:** `Tests role-based wholesale discounts (20% base, 25% tier 2, 35% tier 3) and retail volume breaks (10% at 10+ units).`
+- **Environment:** PHP 8.1 - 8.3 CLI + WooCommerce Pricing Pipeline
+- **Status:** All assertions passing (0 errors, 0 warnings under strict error reporting).
+
+---
+
 ## 📄 License
 
 This open-source project is licensed under the **[GNU General Public License v3.0](LICENSE)**.

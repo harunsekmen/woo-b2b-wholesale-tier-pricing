@@ -20,21 +20,6 @@ add_action('before_woocommerce_init', function () {
     }
 });
 
-final class WooB2BWholesaleTierPricing {
-    const VERSION = '1.0.0';
-    private static ?self \$instance = null;
+require_once __DIR__ . '/includes/class-b2b-engine.php';
 
-    public static function instance(): self {
-        return self::\$instance ??= new self();
-    }
-
-    private function __construct() {
-        add_action('init', [\$this, 'init_engine']);
-    }
-
-    public function init_engine(): void {
-        // Core lifecycle hooks for woo-b2b-wholesale-tier-pricing
-    }
-}
-
-add_action('plugins_loaded', ['WooB2BWholesaleTierPricing', 'instance']);
+add_action('plugins_loaded', ['Woo_B2B_Wholesale_Engine', 'instance']);
